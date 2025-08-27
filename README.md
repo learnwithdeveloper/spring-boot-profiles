@@ -20,9 +20,13 @@ In this video, we dive deep into **Spring Boot Profiles** and learn how to manag
 📌 What are Spring Boot Profiles and why we use them  
 ⚡ How to configure environment-specific property files  
 🏷️ Using `application-dev.properties`, `application-test.properties`, `application-prod.properties`  
-🔑 Activating profiles using `spring.profiles.active`  
-💡 Real-world example: Switching DB configs (H2 for dev, PostgreSQL for prod)  
-🛠️ Using `@Profile` annotation for environment-specific beans  
+🔑 How to activate and switch profiles dynamically  
+🏷️ Real-world Example:  
+✔️ Using @Profile to load different implementations of a service (RoleService)  
+✔️ Dev Profile → RoleServiceImplV2 returning Testing Roles  
+✔️ Prod Profile → RoleServiceImplV1 returning Production Roles  
+✔️ Controller exposing APIs to fetch active roles & database name  
+💡 Best practices for clean and production-ready configuration  
 
 ---
 
